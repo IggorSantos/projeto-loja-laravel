@@ -25,9 +25,9 @@
                 </button>
                 <ul class="dropdown-menu">
                   @foreach($categoriasMenu as $categoriaM)
-                    <li><a class="dropdown-item" href="#">{{ $categoriaM->nome }}</a></li>
+                    <li><a class="dropdown-item" href="/categoria/{{ $categoriaM->id }}">{{ $categoriaM->nome }}</a></li>
                   @endforeach               
-                </ul>
+                 </ul>
               </div>
             </li>
             <li class="nav-item">
