@@ -12,7 +12,7 @@ class ProdutoController extends Controller
      */
     public function index()
     {
-        $produtos = Produto::all();
+        $produtos = Produto::paginate(8);
         return view('site.home', ['produtos' => $produtos]);
     }
 
@@ -35,9 +35,11 @@ class ProdutoController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Produto $produto)
+    public function show($slug)
     {
-        //
+        $produto = Produto::where('slug', $slug)->first();
+
+        return view('site.details', ['produto' => $produto]);
     }
 
     /**
