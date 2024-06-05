@@ -15,3 +15,11 @@
 .dropdown a{
     color: #000;
 }
+
+.card{
+    border: none;
+}
+
+.img-produto{
+  width: 95%;
+}
