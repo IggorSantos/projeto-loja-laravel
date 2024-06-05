@@ -1,0 +1,17 @@
+.nav{
+    background-color: #FF5733;
+    color: #FFF;
+    padding: 0 10%;
+}
+
+.nav a{
+    color: #FFF;
+}
+
+.button-drop{
+    color: #FFF;
+}
+
+.dropdown a{
+    color: #000;
+}
